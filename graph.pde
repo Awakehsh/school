@@ -45,7 +45,7 @@ class Graph {
     return adjList;
   }
   
-  int[] BFS() {
+  int[] DFS() {
     int n = adjList.length;
     //すべての頂点を未発見にしておく
     int[] nodeStatus = new int[n] ;
@@ -73,7 +73,7 @@ class Graph {
     }
     return parents;
   }
-    int[] DFS() {
+    int[] BFS() {
     int n=adjList.length;
     // すべての頂点を未発見にしておく
     int[] nodeStatus = new int[n] ;

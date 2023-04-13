@@ -1,7 +1,7 @@
 final int UNDISCOVERED=0;
 final int DISCOVERED=1;
 final int PROCESSED=2;
-boolean isBFS=true;
+boolean isBFS=false;
 void setup() {
   String[] nodeArray = {"A", "B", "C", "D", "E"};
   NodeSet nodes = new NodeSet(nodeArray);
@@ -26,10 +26,8 @@ void setup() {
   graph.printAdjMatrix();
   graph.printAdjList();
   graph.printParents();
-  exit( );
+
 }
 
 void draw() {
 }
-
-
